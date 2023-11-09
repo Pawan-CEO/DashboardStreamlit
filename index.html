@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DataFrame in HTML Table</title>
+    <style>
+        table.data {
+            border-collapse: collapse;
+            border: 2px solid black;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<h2>DataFrame in HTML Table</h2>
+
+{% for table in tables %}
+    {{ table | safe }}
+{% endfor %}
+
+</body>
+</html>
